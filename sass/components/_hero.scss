@@ -1,0 +1,85 @@
+$hero-orange: #ff7143;
+$main-black: #000000;
+$main-white: #ffffff;
+
+.hero {
+  padding: 48px 0;
+  text-align: center;
+  background-color: $hero-orange;
+  color: $main-black;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
+}
+
+.hero__bg-img {
+  @media screen and (min-width: 1280px) {
+    height: 732px;
+    background-image: url("/images/hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.hero__layout {
+  @media screen and (min-width: 1280px) {
+    width: 632px;
+    padding-top: 242px;
+    padding-bottom: 242px;
+    padding-left: 30px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: normal;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 72px;
+    line-height: 1; /* 100% */
+  }
+}
+
+.hero__text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.5; /* 150% */
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 22px;
+  }
+}
+
+.hero__button {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.5; /* 150% */
+
+  &--first {
+    padding: 12px 72px;
+    color: $main-white;
+    background-color: $main-black;
+    margin-bottom: 16px;
+    @media screen and (min-width: 1280px) {
+      width: 226px;
+      height: 64px;
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &--second {
+    background-color: $main-white;
+    padding: 12px 82px;
+    @media screen and (min-width: 1280px) {
+      padding: 0;
+      width: 208px;
+      height: 64px;
+    }
+  }
+}

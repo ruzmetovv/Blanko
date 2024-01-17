@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap');
+
+//colors
+$hero-orange: #FF7143;
+$main-black: #000000;
+$main-white: #ffffff;
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: $main-black;
+  overflow-x: hidden;
+
+}
+
+h1, h2, h3 {
+  margin: 0;
+}

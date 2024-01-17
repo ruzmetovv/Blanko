@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>blanco</title>
+    <link rel="stylesheet" href="./sass/main.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="container container--flex">
+        <a class="logo" href="">
+            <img srcset="./images/svg/logoDes.svg 1280w,
+             /images/svg/logoM.png 200w"
+                 sizes="(max-width: 480px) 100vw, 1280px"
+                 src="./images/svg/logoDes.svg"
+                 alt="logo-icon">
+        </a>
+
+
+        <button class="menu-button" type="button" data-menu-button>
+
+            <svg class="menu-button__svg">
+                <use class="menu-button__burger" href="./images/svg/mini-sprite.svg#burger"></use>
+                <use class="menu-button__cross" href="./images/svg/mini-sprite.svg#close"></use>
+            </svg>
+
+        </button>
+        <nav class="main-nav">
+            <ul class="main-nav__list" data-menu>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link main-nav__link--padding">mail@blanko.com</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Landing</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">All pages</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Template</a>
+                </li>
+                <li class="main-nav__item">
+                    <button type="button" class="main-nav__button">Purchase template</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero__bg-img">
+            <div class="hero__layout">
+                <h1 class="hero__title">Blanko template</h1>
+                <p class="hero__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio mauris porttitor amet volutpat.
+                </p>
+                <button type="button" class="hero__button hero__button--first">Purchase template</button>
+                <button type="button" class="hero__button hero__button--second">Other templates</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container container--flex">
+            <ul class="features__list">
+                <li>
+                    <span class="features__img"><img alt="" src="./images/features1.svg"/></span>
+                </li>
+
+                <li>
+                    <h3 class="features__subtitle">Speed</h3>
+                    <p class="features__text">Open a commercial-grade current account from anywhere</p>
+                </li>
+            </ul>
+
+            <ul class="features__list">
+                <li>
+                    <span class="features__img"><img alt="" src="./images/features2.svg"/></span>
+                </li>
+
+                <li>
+                    <h3 class="features__subtitle">Design</h3>
+                    <p class="features__text">Open a commercial-grade current account from anywhere</p>
+                </li>
+            </ul>
+
+            <ul class="features__list features__list--noMargin">
+                <li>
+                    <span class="features__img"><img alt="" src="./images/features3.svg"/></span>
+                </li>
+
+                <li>
+                    <h3 class="features__subtitle">Modularity</h3>
+                    <p class="features__text">Open a commercial-grade current account from anywhere</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="community">
+        <div class="container">
+            <ul class="community__list">
+                <li>
+                    <a class="community__icon" href="">
+                        <img srcset="./images/svg/drukDes.svg 1280w,
+                                     ./images/svg/druk.svg 200w"
+                             sizes="(max-width: 480px) 100vw, 1280px"
+                             src="./images/svg/drukDes.svg"
+                             alt="logo-Druk">
+                    </a>
+                </li>
+                <li>
+              <span class="community__slogan"
+              >“Join a community of industry leading professionals. Join a community of industry leading
+                professionals.“</span
+              >
+                </li>
+                <li>
+                    <p class="community__name">Laura Paula</p>
+                </li>
+                <li>
+                    <p class="community__creator">Director @Company</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects">
+        <article class="container"><h2 class="projects__title">Landing pages</h2></article>
+        <div class="projects__container container">
+
+            <article class="projects__box">
+                <div class="projects__img"><img src="./images/la1.png" alt="page"/></div>
+
+                <div class="projects__meta"><p>Landing two</p></div>
+            </article>
+
+            <article class="projects__box">
+                <div class="projects__img"><img src="./images/la2.png" alt="page"/></div>
+
+                <div class="projects__meta"><p>Landing two</p></div>
+            </article>
+
+            <article class="projects__box">
+                <div class="projects__img"><img src="./images/la3.png" alt="page"/></div>
+
+                <div class="projects__meta"><p>Landing two</p></div>
+            </article>
+
+            <article class="projects__box">
+                <div class="projects__img"><img src="./images/la4.png" alt="page"/></div>
+
+                <div class="projects__meta"><p>Landing two</p></div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__container container">
+
+        <div class="footer__layout">
+            <a class="logo logo--noPadding">
+                <img srcset="./images/svg/logoDes.svg 1280w,
+             ./images/svg/logoM.png 200w"
+                     sizes="(max-width: 480px) 100vw, 1280px"
+                     src="./images/svg/logoDes.svg"
+                     alt="logo-icon">
+            </a>
+            <button class="footer__button" type="button">Get on Webflow</button>
+        </div>
+
+        <div class="footer__layout--2">
+            <ul class="footer__nav">
+                <li>
+                    <a class="footer__link" href="">Showcase</a>
+                </li>
+                <li>
+                    <a class="footer__link" href="">Landing one</a>
+                </li>
+                <li>
+                    <a class="footer__link" href="">Sign up</a>
+                </li>
+                <li>
+                    <a class="footer__link" href="">Other templates</a>
+                </li>
+            </ul>
+
+            <ul class="footer__sn-icons">
+                <li>
+                    <a class="footer__icon"><img alt="" src="./images/svg/inst.svg" width="14"/></a>
+                </li>
+                <li>
+                    <a class="footer__icon"><img alt="" src="./images/svg/twitter.svg" width="16"/></a>
+                </li>
+                <li>
+                    <a class="footer__icon"><img alt="" src="./images/svg/facebook.svg" width="9"/></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <ul class="footer__dev">
+            <li class="dev__item dev__item--flex">
+                <p class="dev__text">Powered by</p>
+                <a class="dev__icon"><img alt="" src="./images/svg/webflow.svg"/></a>
+            </li>
+
+            <li class="dev__item dev__item--margin">
+                <p class="dev__text">Designed by<a>Vejico</a></p>
+            </li>
+
+            <li class="dev__item dev__item--margin dev__item--marginLeft"><a href="mailto:">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="./js/mobile-menu.js"></script>
+</body>
+</html>
+
+

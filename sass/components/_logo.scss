@@ -1,0 +1,32 @@
+.logo {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+
+  img {
+    width: 80px;
+  }
+
+
+  &--noPadding {
+
+    padding: 0;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    img {
+      width: 112px;
+      height: 36px;
+    }
+
+  }
+}
+
+//<a class="logo"><img alt="" src="/images/svg/logo.svg"/></a>
