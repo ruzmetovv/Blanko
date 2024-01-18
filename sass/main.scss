@@ -1,6 +1,6 @@
 // Base Styles
-@use "base/reset";
 @use "base/normalize";
+@use "base/reset";
 @use "base/variables";
 
 // Layout
@@ -8,8 +8,8 @@
 
 // Components
 @use "components/header";
-@use "components/hero";
 @use "components/logo";
+@use "components/hero";
 @use "components/features";
 @use "components/community";
 @use "components/projects";
