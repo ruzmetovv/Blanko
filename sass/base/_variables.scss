@@ -5,6 +5,14 @@ $hero-orange: #FF7143;
 $main-black: #000000;
 $main-white: #ffffff;
 
+//hover-colors
+$accent-orange: #FF7143;
+$accent-white: rgba(241, 241, 241, 0.81);
+$accent-black: rgba(44, 44, 44, 0.90);
+
+$cubic-anime: 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;

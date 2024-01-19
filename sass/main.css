@@ -366,8 +366,12 @@ h1, h2, h3 {
 
 .main-nav__list li:nth-child(1) {
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
   margin-right: 63px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.main-nav__list li:nth-child(1):hover, .main-nav__list li:nth-child(1):focus {
+  background-color: #404040;
 }
 @media screen and (min-width: 1280px) {
   .main-nav__list li:nth-child(1) {
@@ -391,6 +395,13 @@ h1, h2, h3 {
 
 .main-nav__link {
   line-height: 24px; /* 150% */
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.main-nav__link:hover, .main-nav__link:focus {
+  color: #FF7143;
+}
+.main-nav__link--hover:hover, .main-nav__link--hover:focus {
+  color: #ffffff;
 }
 .main-nav__link--padding {
   padding: 4px 8px;
@@ -407,7 +418,11 @@ h1, h2, h3 {
   cursor: pointer;
   border: none;
   border-radius: 6px;
-  background: #FF7143;
+  background-color: #ff7143;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.main-nav__button:focus, .main-nav__button:hover {
+  background-color: #F5996B;
 }
 @media screen and (min-width: 1280px) {
   .main-nav__button {
@@ -500,12 +515,17 @@ h1, h2, h3 {
   cursor: pointer;
   font-weight: 700;
   line-height: 1.5; /* 150% */
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 .hero__button--first {
   padding: 12px 72px;
   color: #ffffff;
   background-color: #000000;
   margin-bottom: 16px;
+}
+.hero__button--first:hover, .hero__button--first:focus {
+  background-color: rgba(44, 44, 44, 0.9);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 1280px) {
   .hero__button--first {
@@ -518,6 +538,10 @@ h1, h2, h3 {
 .hero__button--second {
   background-color: #ffffff;
   padding: 12px 82px;
+}
+.hero__button--second:hover, .hero__button--second:focus {
+  background-color: rgba(241, 241, 241, 0.81);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 1280px) {
   .hero__button--second {
@@ -754,6 +778,12 @@ h1, h2, h3 {
   background-color: #ffffff;
   border-radius: 6px;
   border: none;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  cursor: pointer;
+}
+.footer__button:hover, .footer__button:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: rgba(241, 241, 241, 0.81);
 }
 @media screen and (min-width: 1280px) {
   .footer__button {
@@ -770,26 +800,64 @@ h1, h2, h3 {
   gap: 24px;
 }
 
+.footer__link {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #FF7143;
+}
+
 .footer__sn-icons {
   display: flex;
   gap: 8px;
 }
 
-.footer__icon {
+.sn-icons__link {
   display: flex;
   margin-top: 32px;
   margin-bottom: 65px;
   justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   border: 1px solid rgba(0, 0, 0, 0.16);
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  cursor: pointer;
+}
+.sn-icons__link--inst:hover, .sn-icons__link--inst:focus {
+  color: tomato;
+}
+.sn-icons__link--twit:hover, .sn-icons__link--twit:focus {
+  color: #00ACEE;
+}
+.sn-icons__link--fb:hover, .sn-icons__link--fb:focus {
+  color: #0772FF;
 }
 @media screen and (min-width: 1280px) {
-  .footer__icon {
+  .sn-icons__link {
     margin-top: 0;
     margin-bottom: 0;
   }
+}
+
+.sn-icons__in {
+  fill: currentColor;
+  width: 14px;
+  height: 14px;
+}
+
+.sn-icons__tw {
+  fill: currentColor;
+  width: 16px;
+  height: 13px;
+}
+
+.sn-icons__fb {
+  fill: currentColor;
+  width: 9px;
+  height: 16px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -801,6 +869,10 @@ h1, h2, h3 {
   }
 }
 
+.dev__item a:hover,
+.dev__item a:focus {
+  color: #FF7143;
+}
 .dev__item--flex {
   display: flex;
   gap: 12px;
@@ -819,7 +891,7 @@ h1, h2, h3 {
 }
 
 .dev__text a {
-  color: #FF7143;
+  color: #ff7143;
   margin-left: 10px;
 }
 
